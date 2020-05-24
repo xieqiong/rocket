@@ -7,38 +7,68 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes"/>
     <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
-    <title>Turn.js 实现翻书效果</title>
+    <title>和平精英VS火箭少女</title>
     <link rel="stylesheet" type="text/css" href="css/basic.css"/>
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/modernizr.2.5.3.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    <style>
+        #first{
+            cursor: pointer;
+            transition: all 9.6s;
+        }
+        .abc #first{
+            transform: scale(1.5);
+        }
+        .font-class{
+            background: url(./image/font.png) center top no-repeat;
+            background-size: 100%;
+            width: 90%;
+            height: 300px;
+            margin-top: 136%;
+            opacity:0;
+            filter:alpha(opacity=0);
+        }
+        .inOut .font-class{
+            animation: yellow-twinkle 10s infinite alternate;
+        }
+        @keyframes yellow-twinkle{
+            0% {
+                opacity:0;
+                filter:alpha(opacity=0);
+            }
+            100% {
+                opacity:1;
+                filter:alpha(opacity=100);
+            }
+        }
+    </style>
 </head>
 <body>
-<div class="shade">
-    <div class="sk-fading-circle">
-        <div class="sk-circle1 sk-circle"></div>
-        <div class="sk-circle2 sk-circle"></div>
-        <div class="sk-circle3 sk-circle"></div>
-        <div class="sk-circle4 sk-circle"></div>
-        <div class="sk-circle5 sk-circle"></div>
-        <div class="sk-circle6 sk-circle"></div>
-        <div class="sk-circle7 sk-circle"></div>
-        <div class="sk-circle8 sk-circle"></div>
-        <div class="sk-circle9 sk-circle"></div>
-        <div class="sk-circle10 sk-circle"></div>
-        <div class="sk-circle11 sk-circle"></div>
-        <div class="sk-circle12 sk-circle"></div>
-    </div>
-    <div class="number"></div>
-</div>
+<!--<div class="shade">-->
+    <!--<div class="sk-fading-circle">-->
+        <!--<div class="sk-circle1 sk-circle"></div>-->
+        <!--<div class="sk-circle2 sk-circle"></div>-->
+        <!--<div class="sk-circle3 sk-circle"></div>-->
+        <!--<div class="sk-circle4 sk-circle"></div>-->
+        <!--<div class="sk-circle5 sk-circle"></div>-->
+        <!--<div class="sk-circle6 sk-circle"></div>-->
+        <!--<div class="sk-circle7 sk-circle"></div>-->
+        <!--<div class="sk-circle8 sk-circle"></div>-->
+        <!--<div class="sk-circle9 sk-circle"></div>-->
+        <!--<div class="sk-circle10 sk-circle"></div>-->
+        <!--<div class="sk-circle11 sk-circle"></div>-->
+        <!--<div class="sk-circle12 sk-circle"></div>-->
+    <!--</div>-->
+    <!--<div class="number"></div>-->
+<!--</div>-->
 <div class="flipbook-viewport" style="display:none;">
     <div class="previousPage"></div>
     <div class="nextPage"></div>
     <div class="return"></div>
     <img class="btnImg" src="./image/btn.gif" style="display: none"/>
     <div class="container">
-        <div class="flipbook">
-        </div>
+        <div class="flipbook" id="pic"></div>
     </div>
 </div>
 <script>
@@ -113,6 +143,16 @@
         }, function () {
         });
     });
+
+    $(function(){
+        setTimeout("zoom()",2000)
+    });
+    function zoom() {
+        let div = document.getElementById("pic");
+        div.classList.add("abc");
+        $(".pic").addClass("abc");
+    }
+
 </script>
 </body>
 </html>

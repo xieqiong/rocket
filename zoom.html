@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .background{
+            background: url("./image/0002.jpg")center top no-repeat;
+            background-size:100%;
+            width: 100%;
+            height: calc(100vh - 50px);
+            position: relative;
+            border: 1px solid transparent;
+        }
+        .font-class{
+            background: url(./image/font.png) center top no-repeat;
+            background-size: 100%;
+            width: 90%;
+            height: 300px;
+            margin-top: 135%;
+            /*animation: yellow-twinkle 10s infinite alternate;*/
+        }
+
+        @keyframes yellow-twinkle{
+            0% {
+                opacity:0;
+                filter:alpha(opacity=0);
+            }
+            100% {
+                opacity:1;
+                filter:alpha(opacity=100);
+            }
+        }
+    </style>
+</head>
+<body style=" margin: 0px; padding: 0px; ">
+<div class="background">
+    <div class="font-class"></div>
+</div>
+<!--<pre id="aa"></pre>-->
+<script language="javascript">
+    var index=0;
+    var word='123132123123123'
+    function type(){
+        document.getElementById("aa").innerText = word.substring(0,index++);
+    }
+    setInterval(type, 200);
+</script>
+</body>
+</html>
