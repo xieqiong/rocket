@@ -15,47 +15,35 @@
     <style>
         #first{
             cursor: pointer;
-            transition: all 9.6s;
+            transition: all 3.1s;
         }
         .abc #first{
-            transform: scale(1.5);
+            transform: scale(1.3);
         }
         .font-class{
-            background: url(./image/font.png) center top no-repeat;
-            background-size: 100%;
-            width: 90%;
-            height: 300px;
-            margin-top: 136%;
+            position: absolute;
+            top: 76%;
+            background: rgb(244,231,226);
+            width: 86%;
+            height: 100px;
             opacity:0;
             filter:alpha(opacity=0);
         }
         .inOut .font-class{
-            animation: yellow-twinkle 10s infinite alternate;
+            animation: yellow-twinkle 4s infinite alternate;
         }
         @keyframes yellow-twinkle{
             0% {
+                opacity:100;
+                filter:alpha(opacity=100);
+            }
+            100% {
                 opacity:0;
                 filter:alpha(opacity=0);
             }
-            100% {
-                opacity:1;
-                filter:alpha(opacity=100);
-            }
         }
-        .top-layer{
-            background: url("./image/0000.jpg") no-repeat;
-            position: absolute;
-            z-index: 1000;
-            width: 100%;
-            height: 100vh;
-            background-size: 100%;
-            top: 0;
-            cursor: pointer;
-            transition: all 9.6s;
-        }
-        .top-layer-hover{
-            transform: scale(1.5);
-        }
+
+
     </style>
 </head>
 <body>
@@ -66,11 +54,83 @@
     </div>
 </div>
 <div id="startPage" onclick="zoomStartPage()" class="top-layer">
+    <img width="100%" height="100%" src="./image/0000.jpg"/>
+    <div class="light-cal">
+        <img width="100%" height="100%" src="./image/0019.png"/>
+    </div>
     <div class='loader-ring'>
         <div class='loader-ring-light'></div>
         <div class='loader-ring-track'></div>
     </div>
 </div>
+<div id="endPage" class="end-layer">
+    <img width="100%" height="100%" src="./image/0008.jpg"/>
+    <div onclick="getGift()" class="get-btn"></div>
+    <div onclick="reWatch()" class="review-btn"></div>
+</div>
+<div id="shareIntro" class="share-intro">
+    <img width="100%" height="100%" src="./image/0009-3.jpg"/>
+    <div onclick="closeShareInfo()" class="btn-close"></div>
+</div>
+<div id="sharePage" class="end-share">
+    <img width="100%" height="100%" src="./image/0009.jpg"/>
+    <div style="position: absolute;top: 66%;width: 100%">
+        <div onclick="loginGame()" class="left-btn"></div>
+        <div onclick="shareInroFunc()" class="right-btn"></div>
+    </div>
+</div>
+<div id="loginGamePage" class="login-game">
+    <img width="100%" height="100%" src="./image/0010.jpg"/>
+    <div onclick="showUserInfo()" class="login-btn"></div>
+</div>
+<div id="loginSelect" class="login-select">
+    <img width="100%" height="100%" src="./image/0017.png"/>
+    <div style="position: absolute;top: 1%;width: 100%">
+        <div onclick="closeLoin()" class="btn-close"></div>
+        <div onclick="skipStepLogin()" class="btn-winxin"></div>
+        <div onclick="skipStepLogin()" class="btn-QQ"></div>
+    </div>
+
+</div>
+<div id="userInfoPage" class="user-info">
+    <img width="100%" height="100%" src="./image/0011.jpg"/>
+    <div style="position: absolute;top: 0;width: 100%">
+        <div class="cor-input">
+            <input class="input-control" placeholder="收件人姓名">
+            <input style="margin-top: 11px" class="input-control" placeholder="如非中国大陆号码请加区号">
+            <input style="margin-top: 11px" class="input-control" placeholder="如广东省深圳市南山区">
+            <input style="margin-top: 11px" class="input-control" placeholder="如道路，门牌号，小区，楼栋号，单元室等">
+            <input style="margin-top: 10px" class="input-control" placeholder="输入邮编">
+        </div>
+        <div onclick="submitInfo()" class="input-btn"></div>
+    </div>
+</div>
+<div id="askFriend" class="ask-friend">
+    <img width="100%" height="100%" src="./image/0012.jpg"/>
+    <div onclick="doAsk()" class="btn-ask"></div>
+</div>
+<div id="noAskFriend" class="ask-friend-no">
+    <img width="100%" height="100%" src="./image/0013.jpg"/>
+    <div onclick="doAsk()" class="btn-ask"></div>
+</div>
+<div id="selectChannel" class="ask-plant">
+    <img width="100%" height="100%" src="./image/0014.jpg"/>
+    <div style="position: absolute;top:1px;margin-top: 85%;margin-left: 30%">
+        <div onclick="selectWx()" class="left-btn" ></div>
+        <div onclick="selectWx()"  class="right-btn"></div>
+    </div>
+</div>
+<div onclick="showRules()" class="rule-img">
+    <img width="100%" height="100%" src="./image/0016.png"/>
+</div>
+<div onclick="showShare()" class="share-img">
+    <img width="100%" height="100%" src="./image/0018.png"/>
+</div>
+<div id="ruleDetaul" class="rule-detail">
+    <img width="100%" height="100%" src="./image/0015.jpg"/>
+    <div onclick="closeRule()" class="btn-close"></div>
+</div>
+
 <script>
 
 </script>

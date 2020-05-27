@@ -428,3 +428,280 @@ body{
 		transform: rotate(360deg);
 	}
 }
+.end-layer{
+	position: absolute;
+	z-index: 1000;
+	width: 100%;
+	height: 100vh;
+	background-size: 100%;
+	top: 0;
+	display: none;
+}
+.end-layer .get-btn{
+	background: transparent;
+	position: absolute;
+	top: 22%;
+	margin-left: calc(50% - 70px);
+	width: 140px;
+	height: 70px;
+	background-size: 100%;
+}
+.end-layer .review-btn{
+	position: absolute;
+	top: 50%;
+	margin-left: calc(50% - 70px);
+	width: 140px;
+	height: 70px;
+	background: transparent;
+}
+.end-share{
+	position: absolute;
+	z-index: 1000;
+	width: 100%;
+	height: 100vh;
+	background-size: 100%;
+	top: 0;
+	display: none;
+}
+.top-layer{
+	position: absolute;
+	z-index: 1000;
+	width: 100%;
+	height: 100vh;
+	background-size: 100%;
+	top: 0;
+	cursor: pointer;
+	transition: all 4.6s;
+}
+.top-layer-hover{
+	transform: scale(1.4);
+}
+.light-cal {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	height: 100%;
+	opacity: 0.4;
+	filter: alpha(opacity=40);
+	animation: yellow-twinkle1 10s infinite alternate;
+}
+
+
+@keyframes yellow-twinkle1{
+	0% {
+		opacity:0.4;
+		filter:alpha(opacity=40);
+	}
+	100% {
+		opacity:0;
+		filter:alpha(opacity=0);
+	}
+}
+.share-intro{
+	position: absolute;
+	z-index: 2600;
+	width: 100%;
+	height: 100vh;
+	background-size: 100%;
+	top: 0;
+	display: none;
+}
+.share-intro .btn-close{
+	position: absolute;
+	top: 20%;
+	width: 40%;
+	height: 50px;
+	margin-left: 50%;
+	border: 1px solid transparent;
+	background: transparent;
+}
+.end-share .left-btn{
+	float: left;
+	background: transparent;
+	width: 120px;
+	height: 60px;
+	margin-left: 17%;
+}
+.end-share .right-btn{
+	float: right;
+	background: transparent;
+	width: 120px;
+	height: 60px;
+	margin-right: 17%;
+}
+.login-game{
+	position: absolute;
+	z-index: 1200;
+	width: 100%;
+	height: 100vh;
+	background-size: 100%;
+	top: 0;
+	display: none;
+}
+.login-game .login-btn{
+	background: transparent;
+	width: calc(100% - 31%);
+	height: 120px;
+	margin-left: 16%;
+	background-size: 100%;
+	top: 60%;
+	position: absolute;
+}
+.user-info{
+	position: absolute;
+	z-index: 1200;
+	width: 100%;
+	height: 100vh;
+	background-size: 100%;
+	top: 0;
+	display: none;
+}
+.user-info .cor-input{
+	margin-top: 80%;
+	margin-left: 31%;
+}
+.user-info .input-control{
+	width: 71%;
+	border: 1px solid transparent;
+	background: transparent;
+	font-size: 12px;
+}
+.user-info .input-btn{
+	background:transparent;
+	width: 70%;
+	height: 79px;
+	background-size: 100%;
+	margin-left: calc(16% - 2px);
+}
+.ask-friend{
+	position: absolute;
+	z-index: 1200;
+	width: 100%;
+	height: 100vh;
+	background-size: 100%;
+	top: 0;
+	display: none;
+}
+.ask-friend .btn-ask{
+	position: absolute;
+	border: 1px solid transparent;
+	margin-left: 10%;
+	width: 80%;
+	height: 70px;
+	top: 53%;
+	background: transparent;
+}
+.ask-friend-no{
+	position: absolute;
+	z-index: 1200;
+	width: 100%;
+	height: 100vh;
+	background-size: 100%;
+	top: 0;
+	display: none;
+}
+.ask-friend-no .btn-ask{
+	position: absolute;
+	top: 54%;
+	border: 1px solid transparent;
+	width: 80%;
+	height: 70px;
+	margin-left: 10%;
+	background: transparent;
+}
+.ask-plant{
+	position: absolute;
+	z-index: 1200;
+	width: 100%;
+	height: 100vh;
+	background-size: 100%;
+	top: 0;
+	display: none;
+}
+.ask-plant .right-btn{
+	display: inline-block;
+	width: 70px;
+	height: 50px;
+	border: 1px solid transparent;
+	background: transparent;
+}
+.ask-plant .left-btn{
+	display: inline-block;
+	width: 70px;
+	height: 50px;
+	border: 1px solid transparent;
+	background: transparent;
+}
+.rule-img{
+	position: absolute;
+	z-index: 1600;
+	width: 32px;
+	height: 32px;
+	background-size: 100%;
+	display: block;
+	right: 10px;
+	top: 20px
+}
+.share-img{
+	position: absolute;
+	z-index: 1600;
+	width: 32px;
+	height: 32px;
+	background-size: 100%;
+	display: block;
+	right: 10px;
+	top: 70px
+}
+.rule-detail{
+	position: absolute;
+	z-index: 1300;
+	width: 100%;
+	height: 100vh;
+	background-size: 100%;
+	top: 0;
+	display: none;
+}
+.rule-detail .btn-close{
+	position: absolute;
+	top: 20%;
+	background: transparent;
+	height: 50px;
+	width: 40%;
+	margin-left: 50%;
+	border: 1px solid transparent;
+}
+.login-select{
+	position: absolute;
+	z-index: 1300;
+	width: 100%;
+	height: 100vh;
+	background-size: 100%;
+	top: 0;
+	display: none;
+}
+.login-select .btn-close{
+	margin-top: 58%;
+	background: transparent;
+	height: 50px;
+	width: 40%;
+	margin-left: 50%;
+	border: 1px solid transparent;
+}
+.login-select .btn-winxin{
+	margin-top: 10%;
+	background: transparent;
+	height: 50px;
+	width: 30%;
+	margin-left: 20%;
+	border: 1px solid transparent;
+	display: inline-block;
+}
+.login-select .btn-QQ{
+	margin-top: 10%;
+	background: transparent;
+	height: 50px;
+	width: 30%;
+	margin-left: 1%;
+	display: inline-block;
+	border: 1px solid transparent;
+}
