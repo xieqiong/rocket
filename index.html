@@ -12,25 +12,22 @@
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/modernizr.2.5.3.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    <script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
     <style>
-        #first{
-            cursor: pointer;
-            transition: all 3.1s;
-        }
-        .abc #first{
-            transform: scale(1.3);
-        }
         .font-class{
             position: absolute;
-            top: 76%;
+            top: 78%;
             background: rgb(244,231,226);
             width: 86%;
-            height: 100px;
-            opacity:0;
-            filter:alpha(opacity=0);
+            height: 120px;
+            opacity:100;
+            filter:alpha(opacity=100);
+
         }
         .inOut .font-class{
-            animation: yellow-twinkle 4s infinite alternate;
+            animation: yellow-twinkle;/*动画名称*/
+            animation-duration: 6s;/*动画持续时间*/
+            -webkit-animation:yellow-twinkle 6s;/*针对webkit内核*/
         }
         @keyframes yellow-twinkle{
             0% {
@@ -45,6 +42,18 @@
 
 
     </style>
+    <script>
+        //此段代码不能放到外链JS中，不能是变量，<a target="_blank" href="//v2.mosso.oa.com">MOSSO系统</a>需要爬本页面内的代码以得到页面属性
+        //按钮埋点事例：onclick="PTTSendClick('btn','start','开始游戏');"
+        var setSite={ //设置网站属性
+            siteType:"a20160711xxx"   //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+            ,pageType:"index"  //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
+            ,pageName:"和平精英火箭少年"   //必填项:页面中文名
+            ,project:"other"   //选填项:如果是官网模块则是必填;按照模块内容，填写固定的对应值;原生官网base;微社区ingame;同人站doujin;赛事match;故事站story;文化站history;粉丝站fans;爆料站coming;论坛bbs;默认other;
+            ,osact:0          //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
+        }
+        if(typeof(pgvMain) == 'function') pgvMain();//千万不能忘记！
+    </script>
 </head>
 <body>
 
@@ -53,86 +62,199 @@
         <div class="flipbook" id="pic"></div>
     </div>
 </div>
-<div id="startPage" onclick="zoomStartPage()" class="top-layer">
-    <img width="100%" height="100%" src="./image/0000.jpg"/>
+<div id="startPage" onclick="zoomStartPage();PTTSendClick('btn','zoomStartPage','开始翻页');" class="top-layer">
+    <img width="100%" height="100%" src="./image/0001.jpg"/>
     <div class="light-cal">
-        <img width="100%" height="100%" src="./image/0019.png"/>
+        <img width="100%" height="100%" src="./image/midground.png"/>
+    </div>
+    <div class="light-all">
+        <img width="100%" height="100%" src="./image/0000.png"/>
     </div>
     <div class='loader-ring'>
         <div class='loader-ring-light'></div>
         <div class='loader-ring-track'></div>
     </div>
 </div>
+<!--桌面 -->
 <div id="endPage" class="end-layer">
     <img width="100%" height="100%" src="./image/0008.jpg"/>
-    <div onclick="getGift()" class="get-btn"></div>
-    <div onclick="reWatch()" class="review-btn"></div>
+    <div onclick="showRules()" class="rule-img">
+        <img width="100%" height="100%" src="./image/0023.jpg"/>
+    </div>
+    <div onclick="showShare()" class="share-img">
+        <img width="100%" height="100%" src="./image/0024.jpg"/>
+    </div>
+    <div id="receivedTextId"  class="show-after-select">✔游戏奖励已领取</div>
+    <div onclick="changeAddr();PTTSendClick('btn','changeAddr','修改送货地址');" id="changeReceivedAddId"  class="change-receive-addr">
+        <div class="btn-text">✔游戏奖励已领取</div>
+        <div class="btn">修改地址</div>
+        <div class="btn-text">领取时间:6.12-6.20</div>
+    </div>
+    <div id="startReceivedId" class="get-btn">
+        <div onclick="getGift();PTTSendClick('btn','getGift','领取守护礼');"  class="get-btn-btn">
+            领取守护礼
+        </div>
+        <div class="btn-text">领取时间:6.12-6.20</div>
+    </div>
+    <div class="user-name">欢迎您,<span id="textNameId"></span></div>
+    <div onclick="reWatch();PTTSendClick('btn','reWatch','重新观看');" class="review-btn">
+        再看一次
+    </div>
 </div>
 <div id="shareIntro" class="share-intro">
     <img width="100%" height="100%" src="./image/0009-3.jpg"/>
-    <div onclick="closeShareInfo()" class="btn-close"></div>
+    <div onclick="closeShareInfo();PTTSendClick('btn','closeShareInfo','关闭分享');" class="btn-close"></div>
 </div>
 <div id="sharePage" class="end-share">
-    <img width="100%" height="100%" src="./image/0009.jpg"/>
-    <div style="position: absolute;top: 66%;width: 100%">
-        <div onclick="loginGame()" class="left-btn"></div>
-        <div onclick="shareInroFunc()" class="right-btn"></div>
+    <img width="100%" height="100%" src="./image/1000.jpg"/>
+    <div class="window-form">
+        <img width="100%" height="100%" src="./image/0009.jpg"/>
+        <div onclick="doCloseShareAndAcquire();PTTSendClick('btn','doCloseShareAndAcquire','关闭抽奖选择');" class="btn-close"></div>
+        <div style="position: absolute;top: 69%;width: 100%">
+            <div class="font-tips">奖励通过24小时内通过邮件发放至当前角色</div>
+            <div onclick="lotteryDraw();PTTSendClick('btn','lotteryDraw','抽奖');" class="left-btn">抽取同款实物帽子</div>
+            <div onclick="shareInroFunc();PTTSendClick('btn','loginGame','分享好友');" class="right-btn">邀请好友一起领</div>
+        </div>
     </div>
 </div>
 <div id="loginGamePage" class="login-game">
-    <img width="100%" height="100%" src="./image/0010.jpg"/>
-    <div onclick="showUserInfo()" class="login-btn"></div>
+    <img width="100%" height="100%" src="./image/1000.jpg"/>
+    <div class="window-form">
+        <img width="100%" height="100%" src="./image/0010.jpg"/>
+        <div onclick="closeLoginGame()" class="btn-close"></div>
+        <div class="text-tips">登录游戏后即可领取并抽同款实物哦~</div>
+        <div onclick="showUserInfo();;PTTSendClick('btn','showUserInfo','登陆游戏');" class="login-btn">登陆游戏</div>
+    </div>
+
 </div>
 <div id="loginSelect" class="login-select">
-    <img width="100%" height="100%" src="./image/0017.png"/>
-    <div style="position: absolute;top: 1%;width: 100%">
-        <div onclick="closeLoin()" class="btn-close"></div>
-        <div onclick="skipStepLogin()" class="btn-winxin"></div>
-        <div onclick="skipStepLogin()" class="btn-QQ"></div>
+    <img width="100%" height="100%" src="./image/1000.jpg"/>
+    <div class="window-form">
+        <img width="100%" height="100%" src="./image/0017.jpg"/>
+        <div style="position: absolute;top: 1%;width: 100%">
+            <div onclick="closeLoin();PTTSendClick('btn','closeLoin','关闭登陆选择');" class="btn-close"></div>
+            <div onclick="skipStepLogin();" class="btn-winxin"></div>
+            <div onclick="skipStepLogin()" class="btn-QQ"></div>
+        </div>
     </div>
 
 </div>
 <div id="userInfoPage" class="user-info">
-    <img width="100%" height="100%" src="./image/0011.jpg"/>
-    <div style="position: absolute;top: 0;width: 100%">
-        <div class="cor-input">
-            <input class="input-control" placeholder="收件人姓名">
-            <input style="margin-top: 11px" class="input-control" placeholder="如非中国大陆号码请加区号">
-            <input style="margin-top: 11px" class="input-control" placeholder="如广东省深圳市南山区">
-            <input style="margin-top: 11px" class="input-control" placeholder="如道路，门牌号，小区，楼栋号，单元室等">
-            <input style="margin-top: 10px" class="input-control" placeholder="输入邮编">
+    <img width="100%" height="100%" src="./image/1000.jpg"/>
+    <div class="window-form">
+        <img width="100%" height="100%" src="./image/0011.jpg"/>
+        <div onclick="doCloseUserInfo()" class="btn-close"></div>
+        <div class="tool-tips">
+            <div class="">恭喜获得和平精英X火箭少女101合作 </div>
+            <div>限定款实物帽子</div>
+            <div>请填写收件相关信息<span style="color:red">（6.20截止）</span></div>
         </div>
-        <div onclick="submitInfo()" class="input-btn"></div>
+        <div style="position: absolute;top: 0;width: 100%">
+            <div class="cor-input">
+                <input class="input-control" placeholder="收件人姓名">
+                <input style="margin-top: 11px" class="input-control" placeholder="如非中国大陆号码请加区号">
+                <input style="margin-top: 11px" class="input-control" placeholder="如广东省深圳市南山区">
+                <input style="margin-top: 11px" class="input-control" placeholder="如道路，门牌号，小区，楼栋号，单元室等">
+                <input style="margin-top: 10px" class="input-control" placeholder="输入邮编">
+            </div>
+            <div onclick="submitInfo();PTTSendClick('btn','submitInfo','提交收件信息');" class="input-btn">提交</div>
+        </div>
     </div>
 </div>
 <div id="askFriend" class="ask-friend">
-    <img width="100%" height="100%" src="./image/0012.jpg"/>
-    <div onclick="doAsk()" class="btn-ask"></div>
-</div>
-<div id="noAskFriend" class="ask-friend-no">
-    <img width="100%" height="100%" src="./image/0013.jpg"/>
-    <div onclick="doAsk()" class="btn-ask"></div>
-</div>
-<div id="selectChannel" class="ask-plant">
-    <img width="100%" height="100%" src="./image/0014.jpg"/>
-    <div style="position: absolute;top:1px;margin-top: 85%;margin-left: 30%">
-        <div onclick="selectWx()" class="left-btn" ></div>
-        <div onclick="selectWx()"  class="right-btn"></div>
+    <img width="100%" height="100%" src="./image/1000.jpg"/>
+    <div class="window-form">
+        <img width="100%" height="100%" src="./image/0012.jpg"/>
+        <div onclick="doCloseAskG()" class="btn-close"></div>
+        <div class="text-tips">
+            <div>活动结束后将有专人电话联系确认收件  </div>
+            <div>相关信息，请注意接听~</div>
+            <div>实物奖励将在确认信息后一周内</div>
+            <div> 通过快递发送至相应地址</div>
+        </div>
+        <div onclick="doAsk();PTTSendClick('btn','doAsk','分享好友');" class="btn-ask">邀请好友一起领</div>
     </div>
 </div>
-<div onclick="showRules()" class="rule-img">
-    <img width="100%" height="100%" src="./image/0016.png"/>
+<div id="noAskFriend" class="ask-friend-no">
+    <img width="100%" height="100%" src="./image/1000.jpg"/>
+    <div class="window-form">
+        <img width="100%" height="100%" src="./image/0013.jpg"/>
+        <div onclick="close0nAsk()" class="btn-close"></div>
+        <div class="text-tips">
+            <div>很遗憾您没有获得实物帽子奖励    </div>
+            <div>谢谢您的参与</div>
+            <div> 邀请好友看看他的手气吧！</div>
+        </div>
+        <div onclick="doAsk();PTTSendClick('btn','doAsk','分享好友');" class="btn-ask">邀请好友一起领</div>
+    </div>
 </div>
-<div onclick="showShare()" class="share-img">
-    <img width="100%" height="100%" src="./image/0018.png"/>
+<div id="selectChannel" class="ask-plant">
+    <img width="100%" height="100%" src="./image/1000.jpg"/>
+    <div class="window-form">
+        <img width="100%" height="100%" src="./image/0014.jpg"/>
+        <div onclick="closeSelectShare()" class="btn-close"></div>
+        <div class="text-tips">分享邀请好友，一起领限定款帽子</div>
+        <div style="position: absolute;top:1px;margin-top: 71%;margin-left: 25%">
+            <div onclick="selectWx();PTTSendClick('btn','selectWx','微信分享');" class="left-btn" >
+                <img width="100%" height="100%" src="./image/0014-1.jpg"/>
+            </div>
+            <div onclick="selectWx();PTTSendClick('btn','selectWx','微信分享');"  class="right-btn">
+                <img width="100%" height="100%" src="./image/0014-2.jpg"/>
+            </div>
+        </div>
+    </div>
 </div>
+
 <div id="ruleDetaul" class="rule-detail">
-    <img width="100%" height="100%" src="./image/0015.jpg"/>
-    <div onclick="closeRule()" class="btn-close"></div>
+    <img width="100%" height="100%" src="./image/1000.jpg"/>
+    <div class="window-form">
+        <img width="100%" height="100%" src="./image/0015.jpg"/>
+        <div onclick="closeRule()" class="btn-close"></div>
+    </div>
 </div>
 
-<script>
+<div id="backToHomeId" onclick="doBackHomePage();PTTSendClick('btn','doBackHomePage','回到桌面');" class="back-home-btn" >
+    <img width="100%" height="100%" src="./image/back-home.png"/>
+</div>
 
-</script>
+<div id="pannelId" class="lottery-pan">
+    <img width="100%" height="100%" src="./image/1000.jpg"/>
+    <div class="window-form">
+        <img src="./image/timg.gif" style="margin-left: 50px;margin-top: 100px" width="200" height="200" >
+    </div>
+</div>
+
+<div id="createRoleId" class="create-role">
+    <img width="100%" height="100%" src="./image/1000.jpg"/>
+    <div class="window-form">
+        <img width="100%" height="100%" src="./image/0020.jpg"/>
+        <div onclick="closeCreateRole()" class="btn-close"></div>
+        <div class="text-tips">
+            <div>为了奖励的顺利发放  </div>
+            <div>创建过游戏角色的账号才能领取奖励</div>
+            <div>请前往下载游戏创建角色</div>
+        </div>
+        <div onclick="doCreateRole()" class="btn-create-role">创建角色</div>
+    </div>
+</div>
+
+<div id="shareQQId" class="share-qq">
+    <img width="100%" height="100%" src="./image/1000.jpg"/>
+    <div class="window-form">
+        <img width="100%" height="100%" src="./image/0022.jpg"/>
+        <div onclick="closeShareQQ()" class="btn-close"></div>
+        <div class="text-tips">分享邀请好友，一起领限定款帽子</div>
+        <div  class="btn-create-role">
+            <div onclick="doShareQQ()" class="left">
+                <img width="100%" height="100%" src="./image/0022-1.jpg"/>
+            </div>
+            <div onclick="doShareQQFriend()" class="right">
+                <img width="100%" height="100%" src="./image/0022-2.jpg"/>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="formVerifyId" class="form-verify">表单校验</div>
 </body>
 </html>

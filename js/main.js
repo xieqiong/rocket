@@ -126,9 +126,7 @@ function loading() {
                                 if (page == 1) {
 
                                 } else if (page == 2) {
-                                    // let div = document.getElementById("pic");
-                                    // div.classList.add("abc");
-                                    // $(".pic").addClass("abc");
+                                    $("#page2Img").css("display", "block");
                                     let div = document.getElementById("page2-font");
                                     div.classList.add("inOut");
                                     $("#page2-font").addClass("inOut");
@@ -136,68 +134,54 @@ function loading() {
                                     let page2Img = document.getElementById("page2Img");
                                     page2Img.classList.add("font-class");
                                     $("#page2Img").addClass("font-class");
-                                    $(".catalog").css("display", "block");
+                                    setTimeout("bkclose()",4000);
 
                                 } else if (page == 3) {
-                                    // let div = document.getElementById("pic");
-                                    // div.classList.add("abc");
-                                    // $(".pic").addClass("abc");
+                                    $("#page3Img").css("display", "block");
                                     let div = document.getElementById("page3-font");
                                     div.classList.add("inOut");
-                                    $("#page2-font").addClass("inOut");
+                                    $("#page3-font").addClass("inOut");
 
                                     let page2Img = document.getElementById("page3Img");
                                     page2Img.classList.add("font-class");
-                                    $("#page2Img").addClass("font-class");
-                                    $(".catalog").css("display", "block");
+                                    $("#page3Img").addClass("font-class");
+                                    setTimeout("bkclose()",4000);
 
                                 } else if (page == 4) {
-                                    // let div = document.getElementById("pic");
-                                    // div.classList.add("abc");
-                                    // $(".pic").addClass("abc");
+                                    $("#page4Img").css("display", "block");
                                     let div = document.getElementById("page4-font");
                                     div.classList.add("inOut");
-                                    $("#page2-font").addClass("inOut");
+                                    $("#page4-font").addClass("inOut");
 
                                     let page2Img = document.getElementById("page4Img");
                                     page2Img.classList.add("font-class");
-                                    $("#page2Img").addClass("font-class");
-                                    $(".catalog").css("display", "block");
-
+                                    $("#page4Img").addClass("font-class");
+                                    setTimeout("bkclose()",4000);
                                 } else if (page == 5) {
-                                    // let div = document.getElementById("pic");
-                                    // div.classList.add("abc");
-                                    // $(".pic").addClass("abc");
+                                    $("#page5Img").css("display", "block");
                                     let div = document.getElementById("page5-font");
                                     div.classList.add("inOut");
-                                    $("#page2-font").addClass("inOut");
+                                    $("#page5-font").addClass("inOut");
 
                                     let page2Img = document.getElementById("page5Img");
                                     page2Img.classList.add("font-class");
-                                    $("#page2Img").addClass("font-class");
-                                    $(".catalog").css("display", "block");
+                                    $("#page5Img").addClass("font-class");
+                                    setTimeout("bkclose()",4000);
 
                                 } else if (page == 6) {
-                                    // let div = document.getElementById("pic");
-                                    // div.classList.add("abc");
-                                    // $(".pic").addClass("abc");
+                                    $("#page6Img").css("display", "block");
                                     let div = document.getElementById("page6-font");
                                     div.classList.add("inOut");
-                                    $("#page2-font").addClass("inOut");
+                                    $("#page6-font").addClass("inOut");
 
                                     let page2Img = document.getElementById("page6Img");
                                     page2Img.classList.add("font-class");
-                                    $("#page2Img").addClass("font-class");
-                                    $(".catalog").css("display", "block");
+                                    $("#page6Img").addClass("font-class");
+                                    setTimeout("bkclose()",4000);
 
                                 } else {
                                     $(".btnImg").css("display", "block");
                                     $(".mark").css("display", "none");
-                                }
-                                if (page == 41) {
-                                    $(".nextPage").css("display", "none");
-                                } else {
-                                    $(".nextPage").css("display", "block");
                                 }
                             },
                             turned: function (e, page, view) {
@@ -234,8 +218,25 @@ function loading() {
             ;
         }
     }
+    // 模拟方法，后台注释调
+    // todo
+    setUserName('12321312312313123123132')
+
+}
+function bkclose() {
+    $("#page5Img").css("display", "none");
+    $("#page2Img").css("display", "none");
+    $("#page3Img").css("display", "none");
+    $("#page4Img").css("display", "none");
+    $("#page6Img").css("display", "none");
 }
 
+/**
+ * 0,没开始，1抽中，2没中
+ * @type {number}
+ */
+var receivedTex = 0;
+var isLogin = false;
 /**
  * 放大后翻页
  */
@@ -270,15 +271,131 @@ function getGift() {
 }
 
 /**
+ * 关闭没抽到奖品
+ */
+function close0nAsk(){
+    $("#noAskFriend").css("display", "none");
+    $("#endPage").css("display", "block");
+    $("#receivedTextId").css("display", "block");
+    $("#startReceivedId").css("display", "none");
+    receivedTex = 2;
+}
+
+/**
+ * 关闭获奖后邀请用户提示
+ */
+
+function doCloseAskG() {
+    $("#askFriend").css("display", "none");
+    $("#endPage").css("display", "block");
+    receivedTex = 2;
+    $("#changeReceivedAddId").css("display", "block");
+    $("#startReceivedId").css("display", "none");
+}
+
+/**
+ * 修改地址触发
+ */
+function changeAddr() {
+    $("#endPage").css("display", "none");
+    $("#userInfoPage").css("display", "block");
+}
+
+/**
+ * 关闭用户信息
+ */
+function doCloseUserInfo() {
+    $("#userInfoPage").css("display", "none");
+    $("#endPage").css("display", "block");
+}
+
+/**
+ * 设置用户信息
+ */
+
+function setUserName(val) {
+    $("#textNameId").html(val)
+}
+
+/**
+ * 关闭选择分享
+ */
+function closeSelectShare(){
+    $("#selectChannel").css("display", "none");
+    $("#endPage").css("display", "block");
+    $("#startReceivedId").css("display", "none");
+    if(receivedTex==2){
+        $("#receivedTextId").css("display", "block");
+    } else if (receivedTex==1){
+        $("#changeReceivedAddId").css("display", "block");
+    } else {
+        $("#startReceivedId").css("display", "block");
+    }
+}
+
+/**
  * 登陆游戏
  */
-function loginGame() {
-    $("#sharePage").css("display", "none");
-    $("#loginGamePage").css("display", "block");
+function lotteryDraw() {
+    // todo 判断是否登陆了游戏，如果登陆了直接进行抽奖
+    isLogin = true
+    if (isLogin == false) {
+        $("#sharePage").css("display", "none");
+        $("#loginGamePage").css("display", "block");
+    } else {
+        // 直接进入抽奖
+        $("#pannelId").css("display", "block");
+        // 调用后台函数进行抽奖
+        // todo
+        window.setTimeout(" dolotteryDraw()", 3000);
+    }
+
 }
+/**
+ * 提交信息
+ */
+
+function dolotteryDraw() {
+    receivedTex = 1
+    // 获得抽奖结果 receivedTex
+    $("#pannelId").css("display", "none");
+    $("#sharePage").css("display", "none");
+    if (receivedTex == 1) {
+        alert("模拟抽奖结果，抽中")
+        $("#userInfoPage").css("display", "block");
+    } else if (receivedTex == 2){
+        alert("模拟抽奖结果，没抽中")
+        $("#noAskFriend").css("display", "block");
+    }
+}
+
+/**
+ * 提交抽奖信息
+ */
+function submitInfo() {
+    if (receivedTex == 2) {
+        // todo 后台处理更新
+        $("#userInfoPage").css("display", "none");
+        $("#endPage").css("display", "block");
+    } else {
+        // todo 后台新增 temp 是模拟的数据,后台根据抽奖结果进行对接
+        $("#userInfoPage").css("display", "none");
+        $("#askFriend").css("display", "block");
+    }
+
+}
+
 function shareInroFunc() {
     $("#sharePage").css("display", "none");
     $("#shareIntro").css("display", "block");
+}
+
+/**
+ * 关闭登陆页面
+ */
+function closeLoginGame() {
+    $("#loginGamePage").css("display", "none");
+    $("#endPage").css("display", "block");
 }
 
 /**
@@ -297,21 +414,9 @@ function skipStepLogin(){
     $("#loginSelect").css("display", "none");
     $("#userInfoPage").css("display", "block");
 }
-/**
- * 提交信息
- */
-var tmp = 0
-function submitInfo() {
-    tmp = tmp + 1;
-    $("#userInfoPage").css("display", "none");
-    if (tmp % 2 == 0){
-        alert("模拟抽奖结果，抽中")
-        $("#askFriend").css("display", "block");
-    }else {
-        alert("模拟抽奖结果，没抽中")
-        $("#noAskFriend").css("display", "block");
-    }
-}
+
+
+
 function selectWx() {
     alert("选择分享方式");
 }
@@ -332,8 +437,93 @@ function closeShareInfo(){
  * ask
  */
 function doAsk() {
+    receivedTex = true
     $("#noAskFriend").css("display", "none");
     $("#askFriend").css("display", "none");
     $("#selectChannel").css("display", "block");
 }
 
+/**
+ * 显示回到桌面按钮
+ */
+function showBtnToHome() {
+    $("#backToHomeId").css("display", "block");
+}
+
+/**
+ * 影藏回到桌面按钮
+ */
+function hiddenBtnToHome() {
+    $("#backToHomeId").css("display", "none");
+}
+
+
+/**
+ * 回到桌面
+ */
+function doBackHomePage() {
+    $(".flipbook").turn('page', 8);
+    $("#endPage").css("display", "block");
+    hiddenBtnToHome();
+}
+/**
+ * 关闭领取抽奖也没
+ */
+function doCloseShareAndAcquire() {
+    $("#sharePage").css("display", "none");
+    $("#endPage").css("display", "block");
+}
+
+/**
+ * 关闭创建角色
+ */
+function closeCreateRole() {
+    $("#createRoleId").css("display", "none");
+    $("#endPage").css("display", "block");
+}
+
+/**
+ * 创建角色
+ */
+function doCreateRole() {
+    $("#createRoleId").css("display", "none");
+    $("#endPage").css("display", "block");
+}
+
+function showCreateRole () {
+    $("#createRoleId").css("display", "block");
+    $("#endPage").css("display", "none");
+}
+
+/**
+ * qq分享平台
+ */
+function closeShareQQ() {
+    $("#shareQQId").css("display", "none");
+    $("#endPage").css("display", "block");
+}
+function showShareQQ() {
+    $("#shareQQId").css("display", "block");
+    $("#endPage").css("display", "none");
+}
+function doShareQQ() {
+    $("#shareQQId").css("display", "none");
+    $("#endPage").css("display", "block");
+}
+function doShareQQFriend() {
+    $("#shareQQId").css("display", "none");
+    $("#endPage").css("display", "block");
+}
+
+/**
+ * 表单验证框
+ * @param msg
+ */
+function showVefiy(msg) {
+    $("#formVerifyId").html(msg);
+    $("#formVerifyId").css("display", "block");
+    setTimeout("hiddenVefity()", 5000);
+}
+function hiddenVefity() {
+    $("#formVerifyId").css("display", "none");
+}

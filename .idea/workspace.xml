@@ -2,34 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f7311e3-a008-4b13-99e1-85f1054cb21b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/image/0008-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/0009-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/0009.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/0012.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/0013.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/0014.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/0015.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/0016.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/0017.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/0018.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/0019.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/1011.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/0000.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/0014-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/0014-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/0017.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/0020.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/0022-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/0022-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/0022.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/0023.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/0024.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/1000.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/back-home.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/midground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/timg.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readme.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/basic.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/basic.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/0001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/0000.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/0001.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image/0001.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/image/0002.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image/0002.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/image/0003.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image/0003.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/image/0004.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image/0004.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/image/0005.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image/0005.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/image/0006.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image/0006.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/0008-2.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/image/0008.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image/0008.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/0009-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image/0009-3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/0009.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image/0009.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/image/0010.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image/0010.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/image/0011.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image/0011.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/font.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/font.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/0012.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image/0012.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/0013.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image/0013.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/0014.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image/0014.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/0015.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image/0015.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/0017.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zoom.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zoom1.html" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -46,25 +55,32 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
-              <caret line="43" column="9" lean-forward="true" selection-start-line="34" selection-start-column="7" selection-end-line="43" selection-end-column="9" />
+            <state relative-caret-position="330">
+              <caret line="226" column="43" lean-forward="true" selection-start-line="226" selection-start-column="43" selection-end-line="226" selection-end-column="43" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#4;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#style#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#div#5;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#6;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#style#0;n#div#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#div#7;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#style#0;n#div#0;n#div#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#div#8;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#9;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#10;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#style#0;n#div#0;n#div#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#div#11;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#12;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#13;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#1;n#div#0;n#div#7;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#span#0;n#div#2;n#div#1;n#div#0;n#div#7;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#13;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1063">
+              <caret line="160" column="45" selection-start-line="160" selection-start-column="45" selection-end-line="160" selection-end-column="45" />
+              <folding>
+                <element signature="e#46#478#0" />
+                <element signature="e#509#704#0" />
+                <element signature="n#!!block;n#fadeOut#0" />
+                <element signature="n#!!block;n#zoomStartPage#0" />
               </folding>
             </state>
           </provider>
@@ -73,20 +89,22 @@
       <file leaf-file-name="basic.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/basic.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="29">
-              <caret line="483" column="16" selection-start-line="483" selection-start-column="16" selection-end-line="483" selection-end-column="16" />
+            <state relative-caret-position="199">
+              <caret line="437" column="17" selection-start-line="437" selection-start-column="17" selection-end-line="437" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/main.js">
+      <file leaf-file-name="0007.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/image/0007.jpg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file leaf-file-name="readme.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/readme.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="248" column="35" selection-start-line="248" selection-start-column="35" selection-end-line="248" selection-end-column="35" />
-              <folding>
-                <element signature="n#!!block;n#submitInfo#0" />
-              </folding>
+            <state relative-caret-position="285">
+              <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -102,28 +120,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>flipbook</find>
-      <find>date_end</find>
-      <find>showUserInfo</find>
-      <find>block</find>
-      <find>none</find>
+      <find>get-btn</find>
+      <find>setUserName</find>
+      <find>loginGame</find>
+      <find>sharePage</find>
       <find>share-img</find>
-      <find>0000</find>
-      <find>submitInfo</find>
-      <find>top-layer</find>
+      <find>showShare</find>
+      <find>shareIntro</find>
+      <find>back</find>
+      <find>userInfoPage</find>
+      <find>doCloseUserInfo</find>
+      <find>closeShareInfo</find>
+      <find>getGift</find>
+      <find>0013</find>
+      <find>shareInroFunc</find>
+      <find>user-info</find>
       <find>share-intro</find>
       <find>end-share</find>
+      <find>window-form</find>
+      <find>abcd</find>
       <find>login-game</find>
-      <find>login-btn</find>
       <find>login-select</find>
-      <find>user-info</find>
-      <find>input-btn</find>
       <find>ask-friend</find>
-      <find>ask-friend-no</find>
-      <find>ask-plant</find>
+      <find>rule-detail</find>
       <find>rule-img</find>
-      <find>review-btn</find>
-      <find>end-layer</find>
+      <find>create-role</find>
+      <find>share-qq</find>
+      <find>end</find>
+      <find>light-cal</find>
+      <find>back-home-btn</find>
+      <find>lottery-pan</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -133,6 +159,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/zoom.html" />
+        <option value="$PROJECT_DIR$/readme.txt" />
         <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/basic.css" />
@@ -149,8 +176,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="15" />
-    <option name="y" value="30" />
+    <option name="x" value="22" />
+    <option name="y" value="52" />
     <option name="width" value="1890" />
     <option name="height" value="930" />
   </component>
@@ -160,6 +187,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -170,13 +198,12 @@
             <path>
               <item name="rocket" type="b2602c69:ProjectViewProjectNode" />
               <item name="rocket" type="462c0819:PsiDirectoryNode" />
-              <item name="image" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -227,7 +254,12 @@
       <workItem from="1590457835506" duration="498000" />
       <workItem from="1590505456481" duration="6886000" />
       <workItem from="1590540387255" duration="1190000" />
-      <workItem from="1590592022864" duration="5257000" />
+      <workItem from="1590592022864" duration="6266000" />
+      <workItem from="1590628506052" duration="604000" />
+      <workItem from="1590674800767" duration="11517000" />
+      <workItem from="1590716563206" duration="5018000" />
+      <workItem from="1590761899403" duration="10605000" />
+      <workItem from="1590799288305" duration="4036000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1590297878005</created>
@@ -243,11 +275,18 @@
       <option name="project" value="LOCAL" />
       <updated>1590335548934</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="1">
+      <created>1590597304161</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1590597304161</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44085000" />
+    <option name="totallyTimeSpent" value="76874000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -283,54 +322,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3971">
-          <caret line="209" column="17" selection-start-line="209" selection-start-column="17" selection-end-line="209" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/basic.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10830">
-          <caret line="570" column="17" selection-start-line="570" selection-start-column="17" selection-end-line="570" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="988">
-          <caret line="71" column="10" selection-start-line="71" selection-start-column="10" selection-end-line="71" selection-end-column="10" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#4;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#5;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#6;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#div#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#7;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#div#0;n#div#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#8;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#9;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#10;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#div#0;n#div#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#11;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#12;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#13;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2907">
-          <caret line="153" column="8" selection-start-line="153" selection-start-column="8" selection-end-line="153" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zoom1.html" />
-    <entry file="file://$PROJECT_DIR$/zoom.html" />
     <entry file="file://$PROJECT_DIR$/css/basic.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7581">
@@ -344,21 +335,13 @@
           <caret line="22" column="19" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="19" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#4;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#5;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#6;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#div#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#7;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#div#0;n#div#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#8;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#9;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#10;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#div#0;n#div#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#11;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#12;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#13;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#div#0;n#div#7;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#span#0;n#div#2;n#div#1;n#div#0;n#div#7;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#13;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -426,27 +409,9 @@
     <entry file="file://$PROJECT_DIR$/js/jquery.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/image/0004.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/image/0006.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/image/0005.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/zoom.html" />
     <entry file="file://$PROJECT_DIR$/zoom1.html" />
-    <entry file="file://$PROJECT_DIR$/image/0007.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/image/font.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/image/0008.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/image/0009.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/image/0016.png">
@@ -455,16 +420,58 @@
     <entry file="file://$PROJECT_DIR$/image/0010.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/image/0008-1.jpg" />
+    <entry file="file://$PROJECT_DIR$/image/0009-1.jpg" />
+    <entry file="file://$PROJECT_DIR$/image/0009-2.jpg" />
+    <entry file="file://$PROJECT_DIR$/image/0010-1.jpg" />
+    <entry file="file://$PROJECT_DIR$/image/0011-1.jpg" />
+    <entry file="file://$PROJECT_DIR$/image/0015.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image/midground.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image/foreground.png" />
+    <entry file="file://$PROJECT_DIR$/image/background.png" />
+    <entry file="file://$PROJECT_DIR$/image/0008-2.jpg" />
+    <entry file="file://$PROJECT_DIR$/image/0009-3.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/image/0013.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image/0009.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image/0017.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image/0011.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image/0012.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/image/0014.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/image/0001.jpg">
+    <entry file="file://$PROJECT_DIR$/image/0014-2.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image/0008.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/image/0000.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image/0001.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/image/0002.jpg">
@@ -473,75 +480,52 @@
     <entry file="file://$PROJECT_DIR$/image/0003.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/image/0008-1.jpg">
+    <entry file="file://$PROJECT_DIR$/image/0004.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/image/0008-2.jpg">
+    <entry file="file://$PROJECT_DIR$/image/0005.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/image/0009-1.jpg">
+    <entry file="file://$PROJECT_DIR$/image/0006.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/image/0009-2.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/image/0009-3.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/image/0010-1.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/image/0011.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/image/0011-1.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/image/0012.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/image/0015.jpg">
+    <entry file="file://$PROJECT_DIR$/image/0007.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="248" column="35" selection-start-line="248" selection-start-column="35" selection-end-line="248" selection-end-column="35" />
+        <state relative-caret-position="1063">
+          <caret line="160" column="45" selection-start-line="160" selection-start-column="45" selection-end-line="160" selection-end-column="45" />
           <folding>
-            <element signature="n#!!block;n#submitInfo#0" />
+            <element signature="e#46#478#0" />
+            <element signature="e#509#704#0" />
+            <element signature="n#!!block;n#fadeOut#0" />
+            <element signature="n#!!block;n#zoomStartPage#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="43" column="9" lean-forward="true" selection-start-line="34" selection-start-column="7" selection-end-line="43" selection-end-column="9" />
+        <state relative-caret-position="330">
+          <caret line="226" column="43" lean-forward="true" selection-start-line="226" selection-start-column="43" selection-end-line="226" selection-end-column="43" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#4;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#5;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#6;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#div#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#7;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#div#0;n#div#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#8;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#9;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#10;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#div#0;n#div#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#11;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#12;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#13;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#div#0;n#div#7;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#span#0;n#div#2;n#div#1;n#div#0;n#div#7;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#13;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/basic.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
-          <caret line="483" column="16" selection-start-line="483" selection-start-column="16" selection-end-line="483" selection-end-column="16" />
+        <state relative-caret-position="199">
+          <caret line="437" column="17" selection-start-line="437" selection-start-column="17" selection-end-line="437" selection-end-column="17" />
         </state>
       </provider>
     </entry>
